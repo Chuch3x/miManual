@@ -1,5 +1,6 @@
 body {
     background-color: #4642B8;
+    position: relative;
 }
 
 #menu {
@@ -37,7 +38,9 @@ body {
     display: flex;
     justify-content: center;
 }
-
+#Recursos{
+    text-align: center;
+}
 #Recursos-desarrollo{
     margin: 50px auto;
     width: 600px;
@@ -70,4 +73,45 @@ a{
 }
 h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer{
+    width: 84%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #96989B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social-icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(git.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon:hover{
+    background-color: #0F2F83;
+    filter: invert(1);
+}
+.social-icon:nth-of-type(2){
+    background-image: url(facebook.png);
+}
+.social-icon:nth-of-type(3){
+    background-image: url(insta.png);
 }
