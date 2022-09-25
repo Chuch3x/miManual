@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styleEtiquetasCSS.css">
 </head>
 
 <body>
@@ -141,6 +142,7 @@
                     </td>
                 </tr>
             </tbody>
+        </table>
     </div>
 
     <div>
@@ -149,9 +151,9 @@
         <table>
             <thead>
                 <tr>
-                    <th>Elemento</th>
-                    <th>Descripcion</th>
-                    <th>Ejemplo</th>
+                    <th scope="col">Elemento</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Ejemplo</th>
                 </tr>
             </thead>
             <tbody>
@@ -166,8 +168,150 @@
                         </code>
                     </td>
                 </tr>
+                <tr>
+                    <td>Selector de Tipo</td>
+                    <td>Permite seleccionar elementos usando el nombre del elemento.</td>
+                    <td>
+                        <code>
+                               elemento{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Selector de clase (.foo)</td>
+                    <td>Permite seleccionar elementos en función de los valores del atributo class de los elementos.
+                        Para que los elementos sean seleccionados, su atributo class debe incluir un valor que coincida
+                        con el valor del selector. </td>
+                    <td>
+                        <code>
+                            &lt; p class=”foo bar”&gt; ¡HOLA MUNDO! &lt;/p&gt;
+                            &lt; p class=”foo baz” &gt; ¡ADIÓS MUNDO! &lt;/p&gt;
+                               .foo{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Selector de ID (#foo)</td>
+                    <td>Permite seleccionar un elemento en función del valor del atributo ID del elemento. Para que el
+                        elemento sea seleccionado, su atributo id debe coincidir exactamente con el valor dado en el
+                        selector. </td>
+                    <td>
+                        <code>
+                               #foo{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="7">Selector de atributo (a[foo])</td>
+                    <td>Permite seleccionar elementos en función de la presencia o del valor de un determinado atributo.
+                    </td>
+                    <td>
+                        <code>
+                               #foo{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Selecciona elementos que tengan un atributo con el nombre attr. </td>
+                    <td>
+                        <code>
+                               selector[attr]{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Selecciona elementos que tengan un atributo con el nombre attr. El único valor del atributo es
+                        exactamente value. </td>
+                    <td>
+                        <code>
+                               selector[attr=value]{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>selector[attr~=value] { … }
+                        Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del
+                        atributo es exactamente value. </td>
+                    <td>
+                        <code>
+                               selector[attr~=value]{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Selecciona los elementos que tengan un atributo con el nombre attr. El primero de los valores
+                        del atributo empieza con value.</td>
+                    <td>
+                        <code>
+                               selector[attr^=value]{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Selecciona los elementos que tengan un atributo con el nombre attr. El último de los valores
+                        del atributo termina con value.</td>
+                    <td>
+                        <code>
+                               selector[attr$=value]{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del
+                        atributo contiene al menos una ocurrencia de value.</td>
+                    <td>
+                        <code>
+                               selector[attr*=value]{
+                                  declaraciones;
+                             }
+                        </code>
+                    </td>
+                </tr>
             </tbody>
+        </table>
     </div>
+    <div>
+        <h2>PSEUDO-CLASES</h2>
+        <div class="contenedor-pseudoclases">
+            <p>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el
+                documento(:nth-child) e interacción del usuario(:hover). Ejemplo:</p>
+            <p> 
+                <code>
+                    button:hover {
+                        color: blue;
+                      }                      
+                </code>
+            </p>
+        </div>
+        </table>
+    </div>
+    <br>
+    <footer>
+        <div class="social-icons-container">
+            <a href="https://github.com/Chuch3x" target="_blank" class="social-icon"></a>
+            <a href="https://www.facebook.com/cesaraugusto.mendezcamacho" target="_blank" class="social-icon"></a>
+            <a href="https://www.instagram.com/cesarmc1520/" target="_blank" class="social-icon"></a>
+        </div>
+        <span class="copyright">&copy;2022, Cesar Augusto Mendez Camacho. Todos los derechos reservados</span>
+    </footer>
 </body>
 
 </html>
