@@ -53,16 +53,20 @@ a {
     justify-content: center;
 }
 footer{
+    background-image: url(fondoFooter.jpg);
     width: 84%;
     position: relative;
     bottom: 0;
     left: 0;
     padding: 2rem 8%;
-    background-color: #96989B;
+    background-color: #42B881;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+footer span{
+    color: #F6F6F6;
 }
 .social-icons-container{
     display: flex;
@@ -72,6 +76,7 @@ footer{
     margin-bottom: 1rem;
 }
 .social-icon{
+    background-color: #f2f2f2;
     height: 50px;
     width: 50px;
     border-radius: 50px;

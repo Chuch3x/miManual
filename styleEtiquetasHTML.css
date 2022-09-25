@@ -80,6 +80,7 @@ h2 {
 }
 
 footer{
+    background-image: url(fondoFooter.jpg);
     width: 84%;
     position: relative;
     bottom: 0;
@@ -91,6 +92,9 @@ footer{
     align-items: center;
     flex-direction: column;
 }
+footer span{
+    color: #F6F6F6;
+}
 .social-icons-container{
     display: flex;
     justify-content: center;
@@ -99,6 +103,7 @@ footer{
     margin-bottom: 1rem;
 }
 .social-icon{
+    background-color: #f2f2f2;
     height: 50px;
     width: 50px;
     border-radius: 50px;
