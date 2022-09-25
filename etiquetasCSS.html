@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="/index.html">MI MANUAL</a></li>
+            <li><a href="/etiquetasHTML.html">HTML</a></li>
+            <li><a href="">JavaScript</a></li>
+        </ul>
+    </div>
+    <h1 class="titulo"><b>ETIQUETAS CSS</b></h1>
+    <div class="contenedor-css">
+        <img src="css.png" alt="CSS">
+    </div>
+
+    <div id="Recursos-desarrollo-css">
+        <h2 id="Recursos-css"> RECURSOS PARA DESARROLLADORES</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MDN</td>
+                    <td> Documentacion sobre css, html, JavaScript</td>
+                    <td><a href="https://developer.mozilla.org/es/" target="_BLANK">Developer Mozilla</a></td>
+                </tr>
+                <tr>
+                    <td>Color Hunt</td>
+                    <td> Nos muestra diferentes paletas de colores para usar en el desarrollo de la pagina web</td>
+                    <td><a href="https://colorhunt.co/" target="_BLANK">colohunt</a></td>
+                </tr>
+                <tr>
+                    <td>Color Picker</td>
+                    <td>Nos ayuda a poder encontrar el color que queramos en hexadecimal o en fomato para rgba.</td>
+                    <td><a href="https://hslpicker.com/" target="_BLANK">colopicker</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Colores en CSS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descripcion</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>color</td>
+                    <td>Podemos especificar un color usando un nombre predefinido. Por ejemplo podemos especificar que
+                        el color del párrafo sea rojo con la siguiente regla:</td>
+                    <td>
+                        <code>
+                            elemento{
+                                color:red;
+                            }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>rgba</td>
+                    <td>Podemos establecer el valor de un color mezclando diferentes intensidades de los tres colores
+                        primarios(rojo, verde, azul).</td>
+                    <td>
+                        <code>
+                            elemento{
+                                color: rgb(37, 150, 190);
+                            }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>rgba</td>
+                    <td>Podemos definir la transparencia de un color usando la función rgba, esta función es idéntica a
+                        la función rgb, pero con un parámetro adicional denominado opacidad, para especificar la
+                        transparencia.
+                    </td>
+                    <td>
+                        <code>
+                            elemento{
+                                color: rgba(37, 150, 190, 1);
+                            }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hexadecimal</td>
+                    <td>Podemos utilizar un número hexadecimal para definir un color. Es una alternativa a la función
+                        rgb, es decir permite definir un color como la mezcla de intensidades de los colores primarios
+                    </td>
+                    <td>
+                        <code>
+                            elemento{
+                                color: #numero-hexadecimal;
+                            }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hsl</td>
+                    <td>En este modelo utilizamos conceptos que son más fáciles de comprender.
+                        En CSS para poder trabajar con este modelo tenemos la siguiente opción:
+                    </td>
+                    <td>
+                        <code>
+                            elemento{
+                                color: hsl(h, s, l);
+                            }
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hsla</td>
+                    <td>Podemos definir la transparencia de un color usando la función hsla, esta función es idéntica a
+                        la función hsl, pero con un parámetro adicional denominado opacidad, para especificar la
+                        transparencia.
+                    </td>
+                    <td>
+                        <code>
+                            elemento{
+                                color: hsla(h, s, l, a);
+                            }
+                        </code>
+                    </td>
+                </tr>
+            </tbody>
+    </div>
+
+    <div>
+        <h2>Selectores</h2>
+        <p>Permiten seleccionar elementos del documento a los que queremos aplicar estilos.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descripcion</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Selector Universal ( * )</td>
+                    <td>Selecciona todos los elementos. </td>
+                    <td>
+                        <code>
+                            *{
+                                declaraciones;
+                            }
+                        </code>
+                    </td>
+                </tr>
+            </tbody>
+    </div>
+</body>
+
+</html>
