@@ -47,10 +47,11 @@ a {
 }
 
 .contenedorimg {
+    background-image: url(fondoIndex.png);
+    background-color: rgb(48, 45, 45);
     display: flex;
     justify-content: center;
 }
-
 footer{
     width: 84%;
     position: relative;
