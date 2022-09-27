@@ -150,29 +150,29 @@ ul.show {
     text-align: center;
 }
 
-table {
+.tableGen {
     background-color: #40CFAC;
     text-align: left;
     border-collapse: collapse;
     width: 100%;
 }
 
-th,
-td {
+.tableGen th,td {
     padding: 10px;
+    border: 2px solid black;
 }
 
-thead {
+.tableGen thead {
     background-color: black;
     border-bottom: solid 5px;
     color: white;
 }
 
-tr:nth-child(even) {
+.tableGen tr:nth-child(even) {
     background-color: #ddd;
 }
 
-tr:hover td {
+.tableGen tr:hover td {
     background-color: #0F2F83;
     color: #ddd;
 }
@@ -262,11 +262,32 @@ footer span {
 #notaImportant{
     background-color: yellow;
 }
-.contendor_modelo_cajas{
-    border: 5px solid #40CFAC;
-    background-color: #ddd;
+
+#tabla_modeloCajas {
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
 }
-.contenedor-cajas{
-    display: flex;
-    justify-content: left;
+#tabla_modeloCajas th{
+    padding: 10px;
+    border: solid 2px black;
+}
+#tabla_modeloCajas td {
+    padding: 10px;
+    border: solid 2px black;
+}
+
+#tabla_modeloCajas thead {
+    background-color: black;
+    border-bottom: solid 5px;
+    color: white;
+}
+
+#tabla_modeloCajas {
+    background-color: #40CFAC;
+}
+
+#tabla_modeloCajas tr:hover td {
+    background-color: #0F2F83;
+    color: #ddd;
 }

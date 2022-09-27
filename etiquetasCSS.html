@@ -30,7 +30,7 @@
 
     <div id="Recursos-desarrollo-css">
         <h2> RECURSOS PARA DESARROLLADORES</h2>
-        <table>
+        <table class="tableGen">
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -64,7 +64,7 @@
     </div>
     <h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">Colores en CSS</a></h2>
     <div>
-        <table>
+        <table class="tableGen">
             <thead>
                 <tr>
                     <th>Elemento</th>
@@ -158,7 +158,7 @@
     <div>
         <p class="parrafo-introduccion">Permiten seleccionar elementos del documento a los que queremos aplicar estilos.
         </p>
-        <table>
+        <table class="tableGen">
             <thead>
                 <tr>
                     <th scope="col">Elemento</th>
@@ -363,7 +363,7 @@
     <div>
         <p class="parrafo-introduccion">En CSS un longitud es una número y una unidad</p>
         <h2>Unidades Absolutas</h2>
-        <table>
+        <table class="tableGen">
             <thead>
                 <tr>
                     <th scope="col">Unidad</th>
@@ -380,7 +380,7 @@
             </tbody>
         </table>
         <h2>Unidades Relativas</h2>
-        <table>
+        <table class="tableGen">
             <thead>
                 <tr>
                     <th scope="col">Unidad</th>
@@ -412,56 +412,99 @@
         </table>
     </div>
     <h2>MODELO DE CAJAS</h2>
-    <div class="contendor_modelo_cajas">
-        <p>Cada elemento de un documento se considera una caja. CSS determina el tamaño,
-            posicion y propiedades(color,
-            fondo, el ancho del borde, etc).
-            <br> Cada caja está compuesta de cuatra partes:
-        </p>
-        <div class="contenedor-cajas">
-            <img src="modCajas.png" alt="modelo_cajas">
-        </div>
-        <h3>Contenido:</h3>
-        <p>Es el área donde se encuentra el contenido del elemento(texto, imagen, etc). El
-            tamaño puede ser definido
-            explícitamente con las propiedades</p>
-        <ul>
-            <li><code> width </code></li>
-            <li><code> min-width </code></li>
-            <li><code> max-width </code></li>
-            <li><code> height </code></li>
-            <li><code> min-height </code></li>
-            <li><code> max-height </code></li>
-        </ul>
-        <h3>Relleno:</h3>
-        <p>Es el área de relleno del elemento. El grosor del relleno está determinado por
-            las propiedades:</p>
-        <ul>
-            <li><code> padding-top </code></li>
-            <li><code> padding-right </code></li>
-            <li><code> padding-bottom </code></li>
-            <li><code> padding-left </code></li>
-            <li><code> padding </code></li>
-        </ul>
-        <h3>Borde:</h3>
-        <p>Es el borde del elemento. El grosor, color y estilo del borde está determinado por las propiedades:
-        </p>
-        <ul>
-            <li><code> border-width </code></li>
-            <li><code> border-style </code></li>
-            <li><code> border-color </code></li>
-            <li><code> border </code></li>
-        </ul>
-        <h3>Margen:</h3>
-        <p>Es el margen del elemento. Se usa para separar el elemento de sus vecinos. El grosor del margen está
-            determinado por las propiedades:</p>
-        <ul>
-            <li><code> margin-top </code></li>
-            <li><code> margin-right </code></li>
-            <li><code> margin-bottom </code></li>
-            <li><code> margin-left </code></li>
-            <li><code> margin </code></li>
-        </ul>
+    <p class="parrafo-introduccion">Cada elemento de un documento se considera una caja. CSS determina el tamaño,
+        posicion y propiedades(color,
+        fondo, el ancho del borde, etc).
+        <br> Cada caja está compuesta de cuatro partes:
+    </p>
+    <div>
+        <table id="tabla_modeloCajas">
+            <thead>
+                <tr>
+                    <th scope="col">Parte</th>
+                    <th scope="col">Definicion</th>
+                    <th scope="col">Propiedades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="7">Contenido</td>
+                    <td rowspan="7">Es el área donde se encuentra el contenido del elemento(texto, imagen, etc). El
+                        tamaño puede ser definido
+                        explícitamente con las propiedades</td>
+                    <td><code> width </code></td>
+                </tr>
+                <tr>
+                    <td>min-width</td>
+                </tr>
+                <tr>
+                    <td>min-width</td>
+                </tr>
+                <tr>
+                    <td>max-width</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                </tr>
+                <tr>
+                    <td>min-height</td>
+                </tr>
+                <tr>
+                    <td>min-height</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Relleno</td>
+                    <td rowspan="5">Es el área de relleno del elemento. El grosor del relleno está determinado por
+                        las propiedades:</td>
+                    <td><code> padding-top </code></td>
+                </tr>
+                <tr>
+                    <td>padding-right</td>
+                </tr>
+                <tr>
+                    <td>padding-bottom</td>
+                </tr>
+                <tr>
+                    <td>padding-left</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Borde</td>
+                    <td rowspan="4">Es el borde del elemento. El grosor, color y estilo del borde está determinado por
+                        las propiedades:</td>
+                    <td>border-width</td>
+                </tr>
+                <tr>
+                    <td>border-style</td>
+                </tr>
+                <tr>
+                    <td>border-color</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Margen</td>
+                    <td rowspan="5">Es el margen del elemento. Se usa para separar el elemento de sus vecinos. El grosor del margen está
+                        determinado por las propiedades:</td>
+                    <td>margin-top </td>
+                </tr>
+                <tr>
+                    <td>margin-right</td>
+                </tr>
+                <tr>
+                    <td>margin-bottom</td>
+                </tr>
+                <tr>
+                    <td>margin-left</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 
