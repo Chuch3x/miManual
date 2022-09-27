@@ -295,20 +295,140 @@
         </table>
     </div>
     <div>
-        <h2>PSEUDO-CLASES</h2>
-        <div class="contenedor-pseudoclases">
-            <p>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el
-                documento(:nth-child) e interacción del usuario(:hover). Ejemplo:</p>
-            <p> 
-                <code>
-                    button:hover {
-                        color: blue;
-                      }                      
-                </code>
-            </p>
-        </div>
-        </table>
+    <h2>PSEUDO-CLASES</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Ejemplo</th>
+                <th>Documentacion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4"> pseudo-clases</td>
+                <td rowspan="4">Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el
+                    documento(:nth-child) e interacción del usuario(:hover).
+                </td>
+                <td >
+                    <code>
+                        button:hover {
+                            color: blue;
+                          }
+                    </code>
+                </td>
+                <td rowspan="4"> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank"> Documentacion</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <code> :disabled </code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code> :nth-child </code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <code> :first-child </code>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     </div>
+    <div>
+        <h2>PSEUDO-ELEMENTOS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descripcion</th>
+                    <th>Ejemplo</th>
+                    <th>Documentacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="14">Seleccionan parte de un elemento en lugar del elemento mismo. Los pseudo-elementos se añaden a los selectores y permiten añadir estilos a una parte concreta de los elementos seleccionados. Por ejemplo, el pseudo elemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
+                    </td>
+                    <td >
+                        <code>
+                            selector::pseudo-elemento {
+                                 … 
+                                }
+                        </code>
+                    </td>
+                    <td rowspan="14"> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank"> Documentacion</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :after </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :backdrop </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :before </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :cue </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :cue-region </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :first-letter </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :first-line </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :file-selector-button </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :marker </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :part() </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :placeholder </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :selection </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code> :slotted() </code>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
     <br>
     <footer>
         <div class="social-icons-container">
