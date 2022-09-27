@@ -282,7 +282,9 @@ footer span {
     border-bottom: solid 5px;
     color: white;
 }
-
+#tabla_modeloCajas td:nth-child(even){
+    background-color: #ddd;
+}
 #tabla_modeloCajas {
     background-color: #40CFAC;
 }
