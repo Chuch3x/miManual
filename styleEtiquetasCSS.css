@@ -140,6 +140,7 @@ ul.show {
     display: flex;
     justify-content: center;
 }
+
 .contenedor-css img {
     height: 300px;
     width: 300px;
@@ -197,9 +198,11 @@ footer {
     align-items: center;
     flex-direction: column;
 }
-footer span{
+
+footer span {
     color: #F6F6F6;
 }
+
 .social-icons-container {
     display: flex;
     justify-content: center;
@@ -235,11 +238,35 @@ footer span{
 }
 
 .contenedor-pseudoclases {
-    border: 3px solid #40CFAC;
+    border: 5px solid #40CFAC;
     background-color: #ddd;
 }
 
-.contenedor-pseudoclases:hover {
-    background-color: #0F2F83;
-    color: #ddd;
+.contenedor-pseudo-elementos {
+    border: 5px solid #40CFAC;
+    background-color: #ddd;
+}
+
+.parrafo-introduccion {
+    color: yellow;
+}
+
+.contenedor_estilos_en_linea {
+    border: 5px solid #40CFAC;
+    background-color: #ddd;
+}
+.contenedor_important{
+    border: 5px solid #40CFAC;
+    background-color: #ddd; 
+}
+#notaImportant{
+    background-color: yellow;
+}
+.contendor_modelo_cajas{
+    border: 5px solid #40CFAC;
+    background-color: #ddd;
+}
+.contenedor-cajas{
+    display: flex;
+    justify-content: left;
 }

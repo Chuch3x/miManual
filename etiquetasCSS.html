@@ -29,7 +29,7 @@
     </div>
 
     <div id="Recursos-desarrollo-css">
-        <h2 id="Recursos-css"> RECURSOS PARA DESARROLLADORES</h2>
+        <h2> RECURSOS PARA DESARROLLADORES</h2>
         <table>
             <thead>
                 <tr>
@@ -54,12 +54,16 @@
                     <td>Nos ayuda a poder encontrar el color que queramos en hexadecimal o en fomato para rgba.</td>
                     <td><a href="https://hslpicker.com/" target="_BLANK">colopicker</a></td>
                 </tr>
+                <tr>
+                    <td>Polypane</td>
+                    <td>Nos permite calcular la especificidad</td>
+                    <td><a href="https://polypane.app/css-specificity-calculator/" target="_BLANK">polypane</a></td>
+                </tr>
             </tbody>
         </table>
     </div>
-
+    <h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">Colores en CSS</a></h2>
     <div>
-        <h2>Colores en CSS</h2>
         <table>
             <thead>
                 <tr>
@@ -150,10 +154,10 @@
             </tbody>
         </table>
     </div>
-
+    <h2> <a href="https://www.w3.org/TR/selectors-3/">Selectores</a></h2>
     <div>
-        <h2>Selectores</h2>
-        <p id="parrafo-selectores">Permiten seleccionar elementos del documento a los que queremos aplicar estilos.</p>
+        <p class="parrafo-introduccion">Permiten seleccionar elementos del documento a los que queremos aplicar estilos.
+        </p>
         <table>
             <thead>
                 <tr>
@@ -297,111 +301,172 @@
     <br>
     <h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">PSEUDO-CLASES</a></h2>
     <div class="contenedor-pseudoclases">
-    <p>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el
-        documento(:nth-child) e interacción del usuario(:hover). Ejemplo:</p>
+        <p>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el
+            documento(:nth-child) e interacción del usuario(:hover). Ejemplo:</p>
         <code>
             button:hover {
                 color: blue;
               }
-        </code>         
-        <p>Otros ejemplos de Pseudo-clases son:</p>
+        </code>
         <ul>
             <li><code> :disabled </code></li>
             <li><code> :nth-child </code></li>
             <li><code> :first-child </code></li>
-        </ul> 
+        </ul>
     </div>
+    <h2> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">PSEUDO-ELEMENTOS</a>
+    </h2>
+    <div class="contenedor-pseudo-elementos">
+        <p>Seleccionan parte de un elemento en lugar del elemento mismo. Los pseudo-elementos se añaden a los selectores
+            y permiten añadir estilos a una parte concreta de los elementos seleccionados. Por ejemplo, el pseudo
+            elemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
+            <code>selector::pseudo-elemento {
+                …
+                }</code>
+        </p>
+        <p>Otros ejemplos de Pseudo-Elementos son:</p>
+        <ul>
+            <li><code> :after </code></li>
+            <li><code> :backdrop </code></li>
+            <li><code> :before </code><code> :before </code></li>
+            <li><code> :cue </code></li>
+            <li><code> :cue-region </code></li>
+            <li> <code> :first-letter </code></li>
+            <li><code> :first-line </code></li>
+            <li><code> :file-selector-button </code></li>
+            <li><code> :marker </code></li>
+            <li><code> :marker </code></li>
+            <li><code> :part() </code></li>
+            <li><code> :placeholder </code></li>
+            <li><code> :selection </code></li>
+            <li><code> :slotted() </code></li>
+        </ul>
+    </div>
+    <h2>ESTILOS EN LINEA</h2>
+    <div class="contenedor_estilos_en_linea">
+        <p>Los estilos en línea, es decir, las declaraciones CSS especificadas usando el atributo style, tienen
+            prioridad sobre todos las declaraciones normales, sin importar la especificidad.</p>
+    </div>
+    <h2>!IMPORTANT</h2>
+    <div class="contenedor_important">
+        <p>El uso de !important en una declaración CSS sobreescribe cualquier declaración, incluso las declaraciones CSS
+            especificadas usando el atributo style.</p>
+        <p id="notaImportant"> NOTA: <br>
+            Es útil saber que existe el indicador !important para que sepa qué es, cuando lo encuentre en el código de
+            otras personas. Sin embargo, le recomendamos encarecidamente que nunca lo use a menos que sea absolutamente
+            necesario. El indicador !important cambia la forma en que funciona una hoja de estilos, por lo que puede
+            hacer que la depuración de problemas sea realmente difícil de resolver, especialmente en una hoja de estilo
+            grande.
+        </p>
+    </div>
+    <h2>LONGITUDES</h2>
     <div>
-        <h2>PSEUDO-ELEMENTOS</h2>
+        <p class="parrafo-introduccion">En CSS un longitud es una número y una unidad</p>
+        <h2>Unidades Absolutas</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Descripcion</th>
-                    <th>Ejemplo</th>
-                    <th>Documentacion</th>
+                    <th scope="col">Unidad</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Equivalente</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="14">Seleccionan parte de un elemento en lugar del elemento mismo. Los pseudo-elementos se añaden a los selectores y permiten añadir estilos a una parte concreta de los elementos seleccionados. Por ejemplo, el pseudo elemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
-                    </td>
-                    <td >
-                        <code>
-                            selector::pseudo-elemento {
-                                 … 
-                                }
-                        </code>
-                    </td>
-                    <td rowspan="14"> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank"> Documentacion</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :after </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :backdrop </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :before </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :cue </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :cue-region </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :first-letter </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :first-line </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :file-selector-button </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :marker </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :part() </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :placeholder </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :selection </code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <code> :slotted() </code>
-                    </td>
+                    <td>px</td>
+                    <td>Pixel</td>
+                    <td>0.265 mm</td>
                 </tr>
             </tbody>
         </table>
+        <h2>Unidades Relativas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Unidad</th>
+                    <th scope="col">Relativo a</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rem</td>
+                    <td>Relativo al tamaño de la letra del elemento root (El elemento html)</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Relativo a otro valor. Si establecemos el valor de la propiedad font-size, será un porcentaje
+                        del font-size del elemento padre.
+                        Si usamos un porcentaje para establecer el valor del elemento width, será un porcentaje del
+                        width del elemento padre.
+                    </td>
+                </tr>
+                <tr>
+                    <td>vw</td>
+                    <td>Relativo al ancho del viewport</td>
+                </tr>
+                <tr>
+                    <td>vw</td>
+                    <td>Relativo al alto del viewport</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>MODELO DE CAJAS</h2>
+    <div class="contendor_modelo_cajas">
+        <p>Cada elemento de un documento se considera una caja. CSS determina el tamaño,
+            posicion y propiedades(color,
+            fondo, el ancho del borde, etc).
+            <br> Cada caja está compuesta de cuatra partes:
+        </p>
+        <div class="contenedor-cajas">
+            <img src="modCajas.png" alt="modelo_cajas">
         </div>
+        <h3>Contenido:</h3>
+        <p>Es el área donde se encuentra el contenido del elemento(texto, imagen, etc). El
+            tamaño puede ser definido
+            explícitamente con las propiedades</p>
+        <ul>
+            <li><code> width </code></li>
+            <li><code> min-width </code></li>
+            <li><code> max-width </code></li>
+            <li><code> height </code></li>
+            <li><code> min-height </code></li>
+            <li><code> max-height </code></li>
+        </ul>
+        <h3>Relleno:</h3>
+        <p>Es el área de relleno del elemento. El grosor del relleno está determinado por
+            las propiedades:</p>
+        <ul>
+            <li><code> padding-top </code></li>
+            <li><code> padding-right </code></li>
+            <li><code> padding-bottom </code></li>
+            <li><code> padding-left </code></li>
+            <li><code> padding </code></li>
+        </ul>
+        <h3>Borde:</h3>
+        <p>Es el borde del elemento. El grosor, color y estilo del borde está determinado por las propiedades:
+        </p>
+        <ul>
+            <li><code> border-width </code></li>
+            <li><code> border-style </code></li>
+            <li><code> border-color </code></li>
+            <li><code> border </code></li>
+        </ul>
+        <h3>Margen:</h3>
+        <p>Es el margen del elemento. Se usa para separar el elemento de sus vecinos. El grosor del margen está
+            determinado por las propiedades:</p>
+        <ul>
+            <li><code> margin-top </code></li>
+            <li><code> margin-right </code></li>
+            <li><code> margin-bottom </code></li>
+            <li><code> margin-left </code></li>
+            <li><code> margin </code></li>
+        </ul>
+    </div>
+
+
+
+
     <br>
     <footer>
         <div class="social-icons-container">
