@@ -293,3 +293,13 @@ footer span {
     background-color: #0F2F83;
     color: #ddd;
 }
+.contenedor_gen{
+    border: 5px solid #40CFAC;
+    background-color: #ddd;   
+}
+.titulo_lista{
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
